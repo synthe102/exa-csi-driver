@@ -6,7 +6,7 @@ Releases can be found here - https://github.com/DDNStorage/exa-csi-driver/releas
 |CSI driver version|EXAScaler client version|EXA Scaler server version|
 |--- |---|---|
 |>=v2.7.0|>=2.14.0-ddn235|>=6.3.5|
-|>=v2.3.0|>=2.14.0-ddn182|>=6.3.2|
+|v2.3.0 to v2.6.0|>=2.14.0-ddn182|6.3.2 to 6.3.4|
 
 ## Feature List
 |Feature|Feature Status|CSI Driver Version|CSI Spec Version|Kubernetes Version|Openshift Version|Arm64 support|
