@@ -54,6 +54,16 @@ resources:
 
 priorityClassName: system-cluster-critical
 
+# Controller Deployment scheduling configuration
+controller:
+  nodeSelector: {}
+  tolerations: []
+
+# Node DaemonSet scheduling configuration
+node:
+  nodeSelector: {}
+  tolerations: []
+
 secretName: exascaler-csi-file-driver-config
 
 # exascaler driver specific config

@@ -65,6 +65,14 @@ spec:
       serviceAccount: exascaler-csi-node-service-account
       priorityClassName: {{ .Values.priorityClassName }}
       hostNetwork: true
+      {{- with .Values.node.nodeSelector }}
+      nodeSelector:
+        {{- toYaml . | nindent 8 }}
+      {{- end }}
+      {{- with .Values.node.tolerations }}
+      tolerations:
+        {{- toYaml . | nindent 8 }}
+      {{- end }}
       containers:
         # driver-registrar: sidecar container that:
         # 1) registers the CSI driver with kubelet
